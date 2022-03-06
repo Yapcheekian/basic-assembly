@@ -55,31 +55,40 @@ ld results/myexit.o -o results/myexit
 ```
 
 ### System call register (in order)
-```
 1. %rdi
 2. %rsi
 3. %rdx
 4. %r10
 5. %r8
 6. %r9
-```
+
+### Preservation of Registers during function call
+1. %rbp
+2. %rbx
+3. %r12 through %r15
+
+### Input Parameters for function call (in order)
+1. %rdi
+2. %rsi
+3. %rdx
+4. %rcx
+5. %r8
+6. %r9
 
 ### Jump instruction
-```
-jz: jump if Zero (jump if the zero flag is set to 1)
-jnz: jump if Not Zero (jump if the zero flag is set to 0)
-jc: jump if Carry (jump if the carry flag is set to 1)
-jnc: jump if No Carry (jump if the carry flag is set to 0)
+- jz: jump if Zero (jump if the zero flag is set to 1)
+- jnz: jump if Not Zero (jump if the zero flag is set to 0)
+- jc: jump if Carry (jump if the carry flag is set to 1)
+- jnc: jump if No Carry (jump if the carry flag is set to 0)
 
-jo：  jump if the overflow flag is set
-jno： jump if overflow flag is not set
-js: jump if the sign flag is set
-jns: jump if the sign flag is set
+- jo： jump if the overflow flag is set
+- jno： jump if overflow flag is not set
+- js: jump if the sign flag is set
+- jns: jump if the sign flag is set
 
-je: jump if ARG2 equals ARG1
-jne: jump if ARG2 does not equal ARG1
-ja: jump if ARG2 is above (greater than) ARG1
-jae: jump if ARG2 is above (greater than) or equal to ARG1
-jb: jump if ARG2 is below (less than) than ARG1
-jbe: jump if ARG2 is below (less than) or equal to ARG1
-```
+- je: jump if ARG2 equals ARG1
+- jne: jump if ARG2 does not equal ARG1
+- ja: jump if ARG2 is above (greater than) ARG1
+- jae: jump if ARG2 is above (greater than) or equal to ARG1
+- jb: jump if ARG2 is below (less than) than ARG1
+- jbe: jump if ARG2 is below (less than) or equal to ARG1
