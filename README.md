@@ -54,6 +54,16 @@ ld results/myexit.o -o results/myexit
 %eflags: compare and jump
 ```
 
+### System call register (in order)
+```
+1. %rdi
+2. %rsi
+3. %rdx
+4. %r10
+5. %r8
+6. %r9
+```
+
 ### Jump instruction
 ```
 jz: jump if Zero (jump if the zero flag is set to 1)
