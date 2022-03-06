@@ -47,3 +47,9 @@ ld results/myexit.o -o results/myexit
 
 %r8 - %r15
 ```
+
+### Special-purpose registers
+```
+%rip: instruction pointer
+%eflags: compare and jump
+```
