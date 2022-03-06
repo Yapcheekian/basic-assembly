@@ -53,3 +53,18 @@ ld results/myexit.o -o results/myexit
 %rip: instruction pointer
 %eflags: compare and jump
 ```
+
+### Jump instruction
+```
+jz: Jump if Zero (jump if the zero flag is set to 1)
+jnz: Jump if Not Zero (jump if the zero flag is set to 0)
+jc: Jump if Carry (jump if the carry flag is set to 1)
+jnc: Jump if No Carry (jump if the carry flag is set to 0)
+
+je: Jump if ARG2 equals ARG1
+jne: Jump if ARG2 does not equal ARG1
+ja: Jump if ARG2 is above (greater than) ARG1
+jae: Jump if ARG2 is above (greater than) or equal to ARG1
+jb: Jump if ARG2 is below (less than) than ARG1
+jbe: Jump if ARG2 is below (less than) or equal to ARG1
+```
